@@ -1,0 +1,7 @@
+Train number	Destination station	Departure time
+      222 	 	Minsk 			11
+      841 	 	Sewq 			7
+      474 	 	Kiev 			5
+      893 	 	Vdds 			4
+      111 	 	Lviv 			4
+      741 	 	Volo 			2
