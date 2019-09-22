@@ -21,7 +21,7 @@ struct Train
 };
 
 
-void RW(Student* human, int N) {		// Фунція RW для запису в Info.dat !!!
+void RW(Student* human, int N) {		// Writing to a file Info.dat !!!
 	ofstream inFile("Info.dat");
 
 	for (size_t i = 0; i < N; i++)
@@ -44,14 +44,14 @@ void RW(Student* human, int N) {		// Фунція RW для запису в Info.dat !!!
 	inFile.close();
 }      
 
-void RD(Student* human, int N)		// Фунція RD для читання з Info.dat !!!
+void RD(Student* human, int N)		// Reading information from Info.dat !!!
 {
 	ifstream inFile("Info.dat");
 	inFile.read((char*)& human, sizeof(Student));
 	inFile.close();
 }
 
-void sort(Student* human, int N) //Функція сортування вул. за назвою 
+void sort(Student* human, int N) //Sort students by their address
 {
 	for (int i = 0; i < N - 1; i++)
 	{
@@ -67,7 +67,7 @@ void sort(Student* human, int N) //Функція сортування вул. за назвою
 	}
 	cout << endl;
 
-	for (int i = 0; i < N; i++)		//Виведення Інфоррмації  !!!
+	for (int i = 0; i < N; i++)		
 	{
 		cout << human[i].surname << " " << human[i].name << endl;
 		cout << human[i].adres << endl;
@@ -76,7 +76,7 @@ void sort(Student* human, int N) //Функція сортування вул. за назвою
 }; 
 
 
-void RW(int size, Train* ptr)		// Фунція RW для запису в Info.txt !!!
+void RW(int size, Train* ptr)		// Writing to a file Info.txt !!!
 {
 	for (int i = 0; i < size; i++)
 	{
@@ -99,7 +99,7 @@ void RW(int size, Train* ptr)		// Фунція RW для запису в Info.txt !!!
 	outFile.open("Info.txt");
 
 	int mas[2] = { 18,00 };
-	for (int i = 0; i < size; i++)		//Перевірка поїздів які відправляється після 18:00
+	for (int i = 0; i < size; i++)		//Checking trains leaving after 18:00
 	{
 		if (ptr[i].departureTime[0] == mas[0] || ptr[i].departureTime[0] > mas[0])
 		{
@@ -112,7 +112,7 @@ void RW(int size, Train* ptr)		// Фунція RW для запису в Info.txt !!!
 
 }; 
 
-void RD()		// Фунція RD для читання з Info.txt !!!
+void RD()		// Reading information from Info.txt !!!
 {
 	string ptr = "Info.txt";
 	ifstream inFile;
