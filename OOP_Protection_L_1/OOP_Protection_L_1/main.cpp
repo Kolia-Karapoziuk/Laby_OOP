@@ -11,7 +11,6 @@ struct Train
 	int departureTime;
 };
 
-
 int ReadSort(Train* arr)
 {
 	ifstream fin("Info.txt");
@@ -61,7 +60,7 @@ int ReadSort(Train* arr)
 					<< arr[i].stantion << " \t	\t"
 					<< arr[i].departureTime << endl;
 			}
-
+			
 			cout << "     " << arr[i].numTrain << " \t\t" << arr[i].stantion << "\t\t\t" << arr[i].departureTime << endl << endl;
 		}
 	}
