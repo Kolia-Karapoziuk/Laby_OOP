@@ -20,7 +20,6 @@ struct Train
 	int travelTime;
 };
 
-
 void RW(Student* human, int N) {		// Writing to a file Info.dat !!!
 	ofstream inFile("Info.dat");
 
@@ -39,7 +38,7 @@ void RW(Student* human, int N) {		// Writing to a file Info.dat !!!
 		cout << "-------------------------------------|" << endl;
 		cout << endl;
 	}
-
+	
 	inFile.write((char*)& human, sizeof(Student));
 	inFile.close();
 }      
@@ -75,7 +74,6 @@ void sort(Student* human, int N) //Sort students by their address
 	}
 }; 
 
-
 void RW(int size, Train* ptr)		// Writing to a file Info.txt !!!
 {
 	for (int i = 0; i < size; i++)
@@ -88,7 +86,6 @@ void RW(int size, Train* ptr)		// Writing to a file Info.txt !!!
 
 		cout << "Departure time[Enter  hours:minutes]: ";
 		cin >> ptr[i].departureTime[0] >> ptr[i].departureTime[1];
-
 
 		cout << "Travel time [Enter hours]: ";
 		cin >> ptr[i].travelTime;
@@ -109,7 +106,6 @@ void RW(int size, Train* ptr)		// Writing to a file Info.txt !!!
 				  << "Travel time: " << ptr[i].travelTime << " hours;" << endl << endl;
 		}
 	}
-
 }; 
 
 void RD()		// Reading information from Info.txt !!!
@@ -129,9 +125,7 @@ void RD()		// Reading information from Info.txt !!!
 
 	cout << "-------------------------------------|" << endl;
 	inFile.close();
-
 }
-
 
 int main()
 {
