@@ -1,5 +1,5 @@
 Train number: 77845;
-Destination station: Kyiv;
+Destination station: Kiev;
 Departure time: 22:30;
 Travel time: 5 hours;
 
