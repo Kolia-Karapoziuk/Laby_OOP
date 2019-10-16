@@ -1,0 +1,3 @@
+﻿  Comp.cpp
+C:\Users\Admin z Gitaroy\source\repos\OOP_Karapoziuk_L2\OOP_Karapoziuk_L2\Comp.cpp(45,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  OOP_Karapoziuk_L2.vcxproj -> C:\Users\Admin z Gitaroy\source\repos\OOP_Karapoziuk_L2\x64\Debug\OOP_Karapoziuk_L2.exe
