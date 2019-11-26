@@ -1,0 +1,10 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (OOP_Karapoziuk__L4.vcxproj, OOP_Karapoziuk__L5.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Customer.cpp
+  Employee.cpp
+  ExcaptionGenerator.cpp
+  Human.cpp
+  Main.cpp
+  Manager.cpp
+  Project.cpp
+  Generating Code...
+  Laba_L4.vcxproj -> C:\Users\Admin z Gitaroy\source\repos\OOP_Karapoziuk_L6\x64\Debug\OOP_Karapoziuk__L6.exe
